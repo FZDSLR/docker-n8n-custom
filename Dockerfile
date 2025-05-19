@@ -2,9 +2,9 @@ FROM docker.n8n.io/n8nio/n8n
 
 USER root
 
-RUN apk add --no-cache ffmpeg pandoc
+RUN apk add --no-cache ffmpeg pandoc flac
 
-RUN npm install -g mp3tag.js
+RUN npm install -g mp3tag.js axios https-proxy-agent
 
 USER node
 
