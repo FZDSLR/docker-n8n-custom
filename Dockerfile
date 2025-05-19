@@ -4,7 +4,7 @@ USER root
 
 RUN apk add --no-cache ffmpeg pandoc flac
 
-RUN npm install -g mp3tag.js axios https-proxy-agent
+RUN npm install -g mp3tag.js axios https-proxy-agent metaflac-js
 
 USER node
 
